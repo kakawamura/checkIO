@@ -12,11 +12,17 @@ def checkio(str_number, radix):
 
   return sum
 
+def solution(str_number, radix):
+  try:
+    return int(str_number, radix)
+  except ValueError :
+    return -1
 
 
-print checkio('AF', 16)
-print checkio('101', 2)
-print checkio('101', 5)
-print checkio('Z', 36)
-print checkio('AB', 10)
+
+print solution('AF', 16)
+print solution('101', 2)
+print solution('101', 5)
+print solution('Z', 36)
+print solution('AB', 10)
 
